@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: cartier.cartierTest.cartier.ViewAdPageTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 167.634 sec <<< FAILURE!
+testCollect(cartier.cartierTest.cartier.ViewAdPageTest)  Time elapsed: 56.033 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+[
+-步骤: 点击第0个格子, 
+-步骤: 点击第1个格子]
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'cartierauto.local', ip: '172.17.1.171', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at cartier.cartierTest.MyTestCase.runTest(MyTestCase.java:53)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.TimeoutException: Timed out after 15 seconds waiting for visibility of element located by By.name: fav
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'cartierauto.local', ip: '172.17.1.171', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.8.0_31'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/baixing/Downloads/cartierTest/src/test/java/cartier/cartierTest/cartierDev_new.app, networkConnectionEnabled=false, warnings={}, databaseEnabled=false, deviceName=iPhone Simulator, platform=MAC, desired={app=/Users/baixing/Downloads/cartierTest/src/test/java/cartier/cartierTest/cartierDev_new.app, platformVersion=8.1, browserName=, platformName=iOS, deviceName=iPhone Simulator}, platformVersion=8.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS}]
+Session ID: 5321efd3-f7cb-4c3d-9b5a-bf9017db2817
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at cartier.cartierTest.pageObject.ViewAdPage.collect(ViewAdPage.java:32)
+	at cartier.cartierTest.cartier.ViewAdPageTest.testCollect(ViewAdPageTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at cartier.cartierTest.MyTestCase.runTest(MyTestCase.java:51)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 181 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'cartierauto.local', ip: '172.17.1.171', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.8.0_31'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/baixing/Downloads/cartierTest/src/test/java/cartier/cartierTest/cartierDev_new.app, networkConnectionEnabled=false, warnings={}, databaseEnabled=false, deviceName=iPhone Simulator, platform=MAC, desired={app=/Users/baixing/Downloads/cartierTest/src/test/java/cartier/cartierTest/cartierDev_new.app, platformVersion=8.1, browserName=, platformName=iOS, deviceName=iPhone Simulator}, platformVersion=8.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS}]
+Session ID: 5321efd3-f7cb-4c3d-9b5a-bf9017db2817
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+
