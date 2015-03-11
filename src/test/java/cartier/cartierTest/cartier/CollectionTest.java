@@ -21,7 +21,6 @@ public class CollectionTest extends MyTestCase {
     private CarListPage carListPage;
     private ViewAdPage viewAdPage;
 	private Common common;
-	String returnPath="//UIAApplication[1]/UIAWindow[2]/UIANavigationBar[1]/UIAButton[1]";
 	
 	@Before
 	@Override
@@ -45,7 +44,7 @@ public class CollectionTest extends MyTestCase {
         for (int i = 0; i < count; i++) {          
             carListPage.goToVAD(i);
             viewAdPage.collect();
-            driver.findElement(By.xpath(returnPath)).click();
+            driver.findElement(By.name("Back")).click();
         }
         driver.findElement(By.name("首页")).click();
     }
@@ -82,7 +81,7 @@ public class CollectionTest extends MyTestCase {
             price = viewAdPage.getOriginalPrice();
             distance = viewAdPage.getDistance();
             carAge = viewAdPage.getTitle();
-            driver.findElement(By.xpath(returnPath)).click();
+            driver.findElement(By.name("Back")).click();
             driver.findElement(By.name("首页")).click();
             common.checkInFirstPage();
             common.gotoMyInfoPage();
@@ -95,7 +94,7 @@ public class CollectionTest extends MyTestCase {
             assertEquals(distance, viewAdPage.getDistance());
             assertEquals(carAge, viewAdPage.getTitle());
             viewAdPage.rmCollect();
-            driver.findElement(By.xpath(returnPath)).click();
+            driver.findElement(By.name("Back")).click();
         }
     }
 
@@ -147,12 +146,13 @@ public class CollectionTest extends MyTestCase {
             carListPage.goToVAD(0);
             viewAdPage.collect();
             title = viewAdPage.getTitle();
-            driver.findElement(By.xpath(returnPath)).click();
+            driver.findElement(By.name("Back")).click();
             driver.findElement(By.name("首页")).click();
         }      
         common.gotoMyInfoPage();
         myInfoPage.showCollection();
         assertTrue(title.contains(myInfoPage.getTitle(0)));
+        deleteAllCollect();
     }
 }
 

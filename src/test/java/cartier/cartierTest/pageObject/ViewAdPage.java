@@ -58,7 +58,8 @@ public class ViewAdPage {
 	}
 
 	public String getOriginalPrice() {
-		String pricePath="//UIAApplication[1]/UIAWindow[2]/UIAScrollView[1]/UIAStaticText[5]";
+//		String pricePath="//UIAApplication[1]/UIAWindow[2]/UIAScrollView[1]/UIAStaticText[5]";
+		String pricePath="//UIAScrollView[1]/UIAStaticText[5]";
 		String price=driver.findElement(By.xpath(pricePath)).getAttribute("name");
 		LogUtil.addData("价格", price);
 		return price;
@@ -71,21 +72,21 @@ public class ViewAdPage {
 		return brand;
 	}
 
-	public Object getCarSeries() {
+	public String getCarSeries() {
 		String carSeriesPath="//UIAApplication[1]/UIAWindow[2]/UIAScrollView[1]/UIAStaticText[15]";
 		String carSeries=driver.findElement(By.xpath(carSeriesPath)).getAttribute("name");
 		LogUtil.addData("车系列", carSeries);
 		return carSeries;
 	}
 
-	public Object getModel() {
+	public String getModel() {
 		String modelPath="//UIAApplication[1]/UIAWindow[2]/UIAScrollView[1]/UIAStaticText[17]";
 		String model=driver.findElement(By.xpath(modelPath)).getAttribute("name");
 		LogUtil.addData("车型", model);
 		return model;
 	}
 
-	private String getDetail() {
+	public String getDetail() {
 		String detailPath="//UIAApplication[1]/UIAWindow[2]/UIAScrollView[1]/UIAStaticText[26]";
 		String detail=driver.findElement(By.xpath(detailPath)).getAttribute("name");
 		LogUtil.addData("车辆详情", detail);

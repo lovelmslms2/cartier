@@ -36,7 +36,7 @@ public class FirstPage {
 		LogUtil.addData("location", location);
         LogUtil.addStep("检查九宫格显示的排序和字符");
 		String[] gridTexts = new String[]{"个人车源", location + "二手车", "全国二手车", "我的收藏", 
-				"车商聊天室", "过户转籍", "车辆估价", "违章查询", "限迁标准", "免费刷新20条","意见反馈"};
+				"车商聊天室", "过户转籍", "车辆估价", "违章查询", "限迁标准", "免费刷新20条","车商内网反馈"};
 		List<WebElement> gridView=driver.findElements(By.className("UIACollectionCell"));
 		for(String gridText:gridTexts){
 			gridName=gridView.get(i).getAttribute("name");

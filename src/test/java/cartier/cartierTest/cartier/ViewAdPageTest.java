@@ -19,7 +19,6 @@ public class ViewAdPageTest extends MyTestCase{
 	private CarListPage carListPage;
 	private ViewAdPage viewAdPage;
 	private Common common;
-	String returnPath="//UIAApplication[1]/UIAWindow[2]/UIANavigationBar[1]/UIAButton[1]";
 
 	@Before
 	@Override
@@ -47,7 +46,7 @@ public class ViewAdPageTest extends MyTestCase{
         for (int i = 0; i < 3; i++) {
             gotoVAD(i, 0);
             viewAdPage.checkContact();
-            driver.findElement(By.xpath(returnPath)).click();
+            driver.findElement(By.name("Back")).click();
             driver.findElement(By.name("首页")).click();
         }
     }
@@ -57,7 +56,7 @@ public class ViewAdPageTest extends MyTestCase{
         for (int i = 0; i < 3; i++) {
             gotoVAD(i, 0);
             viewAdPage.share();
-            driver.findElement(By.xpath(returnPath)).click();
+            driver.findElement(By.name("Back")).click();
             driver.findElement(By.name("首页")).click();
         }
     }
@@ -68,7 +67,7 @@ public class ViewAdPageTest extends MyTestCase{
             gotoVAD(i, 0);
             viewAdPage.collect();
             viewAdPage.rmCollect();
-            driver.findElement(By.xpath(returnPath)).click();
+            driver.findElement(By.name("Back")).click();
             driver.findElement(By.name("首页")).click();
         }
     }

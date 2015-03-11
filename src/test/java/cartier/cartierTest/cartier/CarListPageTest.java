@@ -20,7 +20,6 @@ public class CarListPageTest extends MyTestCase {
     private CarListPage carListPage;
     private ViewAdPage viewAdPage;
 	private Common common;
-	String returnPath="//UIAApplication[1]/UIAWindow[2]/UIANavigationBar[1]/UIAButton[1]";
 
 	@Before
 	@Override
@@ -41,13 +40,13 @@ public class CarListPageTest extends MyTestCase {
 	@Test
     public void testCarTypeFilter() {
         for (int j = 0; j < 3; j++) {
-            firstPage.gotoGrid(j);
+            firstPage.gotoGrid(j);          
             carListPage.selectCarType(new String[]{"奥迪", "奥迪A6", "不限型号"});
             for (int i = 0; i < 6; i++) {
                 try {
                     carListPage.goToVAD(i);
-                    assertEquals("奥迪A6", viewAdPage.getCarSeries());
-                    driver.findElement(By.xpath(returnPath)).click();
+                    assertEquals(viewAdPage.getCarSeries(),"奥迪A6");
+                    driver.findElement(By.name("Back")).click();
                 } catch (Exception e) {
                     break;
                 }
@@ -60,8 +59,8 @@ public class CarListPageTest extends MyTestCase {
             for (int i = 0; i < 6; i++) {
                 try {
                     carListPage.goToVAD(i);
-                    assertEquals("宝马", viewAdPage.getCarBrand());
-                    driver.findElement(By.xpath(returnPath)).click();
+                    assertEquals(viewAdPage.getCarBrand(),"宝马");
+                    driver.findElement(By.name("Back")).click();
                 } catch (Exception e) {
                     break;
                 }
@@ -82,7 +81,7 @@ public class CarListPageTest extends MyTestCase {
             	carListPage.goToVAD(i);
                 priceValue = viewAdPage.getPrice();
                 assertTrue(priceValue <= 3);
-                driver.findElement(By.xpath(returnPath)).click();
+                driver.findElement(By.name("Back")).click();
             }
             driver.findElement(By.name("首页")).click();
             common.checkInFirstPage();
@@ -91,14 +90,15 @@ public class CarListPageTest extends MyTestCase {
     
 	@Test
     public void testSearch(){
+		String s="比亚迪";
         for (int j = 0; j < 3; j++) {
             firstPage.gotoGrid(j);
             carListPage.gotoSearchPage();
-            carListPage.search("比亚迪");
+            carListPage.search(s);
             for (int i = 0; i < 6; i++) {
                 carListPage.goToVAD(i);
                 assertTrue(viewAdPage.getAllInfo().contains("比亚迪"));
-                driver.findElement(By.xpath(returnPath)).click();
+                driver.findElement(By.name("Back")).click();
             }
             driver.findElement(By.name("Back")).click();
             wait.until(ExpectedConditions.visibilityOfElementLocated(
