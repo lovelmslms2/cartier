@@ -1,0 +1,9 @@
+[
+{"id":"m30","name":"上海","englishName":"shanghai"},
+{"id":"m28","name":"北京","englishName":"beijing"},
+{"id":"m250","name":"深圳","englishName":"shenzhen"},
+{"id":"m191","name":"宁波","englishName":"ningbo"},
+{"id":"m156","name":"常州","englishName":"changzhou"},
+{"id":"m149","name":"苏州","englishName":"suzhou"},
+{"id":"m198","name":"福州","englishName":"fuzhou"}
+]
