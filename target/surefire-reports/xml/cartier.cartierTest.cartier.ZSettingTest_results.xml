@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Project_V3023"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="31.598">
+  <properties />
+  
+  
+            <testcase name="testZSignOut on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="3.453" classname="cartier.cartierTest.cartier.ZSettingTest" />
+                <testcase name="testCheckUpdate on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="6.823" classname="cartier.cartierTest.cartier.ZSettingTest" />
+                <testcase name="testAboutUs on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="5.163" classname="cartier.cartierTest.cartier.ZSettingTest" />
+                <testcase name="testChangeUserName on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="16.158" classname="cartier.cartierTest.cartier.ZSettingTest" />
+                <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="0.001" classname="cartier.cartierTest.cartier.ZSettingTest" />
+      
+</testsuite>

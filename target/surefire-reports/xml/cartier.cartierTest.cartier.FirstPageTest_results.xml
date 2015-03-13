@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Project_V3023"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="76.791">
+  <properties />
+  
+  
+            <testcase name="testChangeLocation on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="14.717" classname="cartier.cartierTest.cartier.FirstPageTest" />
+                <testcase name="testGridViewShowing on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="1.043" classname="cartier.cartierTest.cartier.FirstPageTest" />
+                <testcase name="testUpButton on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="53.910" classname="cartier.cartierTest.cartier.FirstPageTest" />
+                <testcase name="testTabs on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="7.121" classname="cartier.cartierTest.cartier.FirstPageTest" />
+                <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="0.000" classname="cartier.cartierTest.cartier.FirstPageTest" />
+      
+</testsuite>

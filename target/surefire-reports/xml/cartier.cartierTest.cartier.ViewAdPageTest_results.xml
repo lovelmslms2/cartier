@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Project_V3023"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="104.239">
+  <properties />
+  
+  
+            <testcase name="testCollect on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="48.205" classname="cartier.cartierTest.cartier.ViewAdPageTest" />
+                <testcase name="testShare on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="33.009" classname="cartier.cartierTest.cartier.ViewAdPageTest" />
+                <testcase name="testCheckContact on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="23.024" classname="cartier.cartierTest.cartier.ViewAdPageTest" />
+                <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="0.001" classname="cartier.cartierTest.cartier.ViewAdPageTest" />
+      
+</testsuite>

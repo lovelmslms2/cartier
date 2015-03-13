@@ -1,6 +1,7 @@
 package cartier.cartierTest.cartier;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -85,11 +86,11 @@ public class CollectionTest extends MyTestCase {
             common.checkInMyInfo();
             myInfoPage.showCollection();
             myInfoPage.goToVAD(0,false);
-            assertEquals(title, viewAdPage.getTitle());
+            Assert.assertEquals(title, viewAdPage.getTitle());
 //            Assert.assertEquals(location, viewAdPage.getLocation());
-            assertEquals(price, viewAdPage.getOriginalPrice());
-            assertEquals(distance, viewAdPage.getDistance());
-            assertEquals(carAge, viewAdPage.getTitle());
+            Assert.assertEquals(price, viewAdPage.getOriginalPrice());
+            Assert.assertEquals(distance, viewAdPage.getDistance());
+            Assert.assertEquals(carAge, viewAdPage.getTitle());
             viewAdPage.rmCollect();
             driver.findElement(By.name("Back")).click();
         }
@@ -104,7 +105,7 @@ public class CollectionTest extends MyTestCase {
         }         
         common.gotoMyInfoPage();
         myInfoPage.showCollection();
-        assertEquals(6, myInfoPage.getCollectCount());
+        Assert.assertEquals(6, myInfoPage.getCollectCount());
     }
     
 	@Test
@@ -116,10 +117,10 @@ public class CollectionTest extends MyTestCase {
         }         
         common.gotoMyInfoPage();
         myInfoPage.showCollection();
-        assertEquals(3, myInfoPage.getCollectCount());
+        Assert.assertEquals(3, myInfoPage.getCollectCount());
         delCollectFromCollectionList(0);
         myInfoPage.showCollection();
-        assertEquals(2, myInfoPage.getCollectCount());
+        Assert.assertEquals(2, myInfoPage.getCollectCount());
     }
     
 	@Test
@@ -130,7 +131,7 @@ public class CollectionTest extends MyTestCase {
             addToCollection(i, 1);
         }
         deleteAllCollect();
-        assertEquals(0, myInfoPage.getCollectCount());
+        Assert.assertEquals(0, myInfoPage.getCollectCount());
     }
     
 	@Test
@@ -148,7 +149,7 @@ public class CollectionTest extends MyTestCase {
         }      
         common.gotoMyInfoPage();
         myInfoPage.showCollection();
-        assertTrue(title.contains(myInfoPage.getTitle(0)));
+        Assert.assertTrue(title.contains(myInfoPage.getTitle(0)));
         driver.findElement(By.name("首页")).click();
         deleteAllCollect();
     }

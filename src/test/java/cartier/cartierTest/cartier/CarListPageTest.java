@@ -2,6 +2,7 @@ package cartier.cartierTest.cartier;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -42,7 +43,7 @@ public class CarListPageTest extends MyTestCase {
             for (int i = 0; i < 6; i++) {
                 try {
                     carListPage.goToVAD(i);
-                    assertEquals(viewAdPage.getCarSeries(),"奥迪A6");
+                    Assert.assertEquals(viewAdPage.getCarSeries(),"奥迪A6");
                     driver.findElement(By.name("Back")).click();
                 } catch (Exception e) {
                     break;
@@ -56,7 +57,7 @@ public class CarListPageTest extends MyTestCase {
             for (int i = 0; i < 6; i++) {
                 try {
                     carListPage.goToVAD(i);
-                    assertEquals(viewAdPage.getCarBrand(),"宝马");
+                    Assert.assertEquals(viewAdPage.getCarBrand(),"宝马");
                     driver.findElement(By.name("Back")).click();
                 } catch (Exception e) {
                     break;
@@ -77,7 +78,7 @@ public class CarListPageTest extends MyTestCase {
             for (int i = 0; i < 6; i++) {
             	carListPage.goToVAD(i);
                 priceValue = viewAdPage.getPrice();
-                assertTrue(priceValue <= 3);
+                Assert.assertTrue(priceValue <= 3);
                 driver.findElement(By.name("Back")).click();
             }
             driver.findElement(By.name("首页")).click();
@@ -94,7 +95,7 @@ public class CarListPageTest extends MyTestCase {
             carListPage.search(s);
             for (int i = 0; i < 6; i++) {
                 carListPage.goToVAD(i);
-                assertTrue(viewAdPage.getAllInfo().contains("比亚迪"));
+                Assert.assertTrue(viewAdPage.getAllInfo().contains("比亚迪"));
                 driver.findElement(By.name("Back")).click();
             }
             driver.findElement(By.name("Back")).click();

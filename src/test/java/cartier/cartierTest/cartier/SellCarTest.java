@@ -1,6 +1,7 @@
 package cartier.cartierTest.cartier;
 
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -50,7 +51,7 @@ public class SellCarTest extends MyTestCase{
         common.gotoSellCarPage();
         publishCar();
         common.checkInMyInfo();
-        assertEquals(1,myInfoPage.getMyAdCount());
+        Assert.assertEquals(1,myInfoPage.getMyAdCount());
         myInfoPage.goToVAD(0,true);
         viewAdPage.checkInfo(createNewAd());
         viewAdPage.deleteMyAd();

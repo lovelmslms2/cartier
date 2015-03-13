@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Project_V3023(failed)" preserve-order="false">
+    <classes>
+      <class name="cartier.cartierTest.cartier.ZSettingTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="cartier.cartierTest.cartier.SellCarTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="cartier.cartierTest.cartier.FirstPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="cartier.cartierTest.cartier.ViewAdPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="cartier.cartierTest.cartier.CarListPageTestTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSearch"/>
+          <include name="setUp"/>
+          <include name="testCarTypeFilter"/>
+          <include name="testPriceFilter"/>
+        </methods>
+      </class>
+      <class name="cartier.cartierTest.cartier.LoginTest">
+        <methods>
+          <include name="testLoginWithWrongPhoneNumber"/>
+          <include name="testzLogInSuccess"/>
+          <include name="testLoginWithWrongPassword"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="cartier.cartierTest.cartier.CarListPageTest">
+        <methods>
+          <include name="testSearch"/>
+          <include name="testPriceFilter"/>
+          <include name="tearDown"/>
+          <include name="testCarTypeFilter"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+      <class name="cartier.cartierTest.cartier.CollectionTest">
+        <methods>
+          <include name="testDeleteAllCollect"/>
+          <include name="testLastCollectShowsOnTop"/>
+          <include name="setUp"/>
+          <include name="testAddCollectCount"/>
+          <include name="testDeleteCollect"/>
+          <include name="testAddCollectInfo"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

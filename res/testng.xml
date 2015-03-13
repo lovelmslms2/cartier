@@ -5,7 +5,7 @@
     verbose="1" >
     <test name="Project_V3023" >
         <packages>
-            <package name="com.saucelabs.appium" />
+            <package name="cartier.cartierTest.cartier" />
         </packages>
     </test>
     <listeners>

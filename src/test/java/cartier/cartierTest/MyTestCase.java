@@ -14,7 +14,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import cartier.cartierTest.pageObject.LoginPage;
 
@@ -57,11 +56,5 @@ public class MyTestCase extends TestCase {
             throw new Exception("\n" + LogUtil.getLog().toString(), e);
         } finally {
         }
-    }
-	@Test
-	public void testMyTest(){
-		
-	}
-	
-
+    }	
 }

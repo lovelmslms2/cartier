@@ -1,3 +1,385 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="cartierauto.local" tests="0" failures="0" timestamp="13 Mar 2015 04:44:03 GMT" time="0.0" errors="0">
+<testsuite hostname="cartierauto.local" name="cartier.cartierTest.MyTestCase" tests="36" failures="6" timestamp="13 Mar 2015 06:39:39 GMT" time="1515.363" errors="0">
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Error communicating with the remote browser. It may have died.
+Build info: version: &amp;apos;2.43.1&amp;apos;, revision: &amp;apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&amp;apos;, time: &amp;apos;2014-09-10 09:43:55&amp;apos;
+System info: host: &amp;apos;cartierauto.local&amp;apos;, ip: &amp;apos;192.168.6.234&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;10.10.1&amp;apos;, java.version: &amp;apos;1.8.0_31&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'cartierauto.local', ip: '192.168.6.234', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:185)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
+	at cartier.cartierTest.cartier.CarListPageTest.tearDown(CarListPageTest.java:35)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 34 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 46 more
+... Removed 24 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &amp;apos;2.43.1&amp;apos;, revision: &amp;apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&amp;apos;, time: &amp;apos;2014-09-10 09:43:55&amp;apos;
+System info: host: &amp;apos;cartierauto.local&amp;apos;, ip: &amp;apos;192.168.6.234&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;10.10.1&amp;apos;, java.version: &amp;apos;1.8.0_31&amp;apos;
+Driver info: driver.version: IOSDriver">
+      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'cartierauto.local', ip: '192.168.6.234', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.8.0_31'
+Driver info: driver.version: IOSDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:23)
+	at cartier.cartierTest.MyTestCase.setUp(MyTestCase.java:34)
+	at cartier.cartierTest.cartier.CollectionTest.setUp(CollectionTest.java:26)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 50 more
+... Removed 24 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &amp;apos;2.43.1&amp;apos;, revision: &amp;apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&amp;apos;, time: &amp;apos;2014-09-10 09:43:55&amp;apos;
+System info: host: &amp;apos;cartierauto.local&amp;apos;, ip: &amp;apos;192.168.6.234&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;10.10.1&amp;apos;, java.version: &amp;apos;1.8.0_31&amp;apos;
+Driver info: driver.version: IOSDriver">
+      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'cartierauto.local', ip: '192.168.6.234', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.8.0_31'
+Driver info: driver.version: IOSDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:23)
+	at cartier.cartierTest.cartier.LoginTest.setUp(LoginTest.java:41)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 49 more
+... Removed 24 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@BeforeMethod setUp" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="@AfterMethod tearDown" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="0.001" classname="cartier.cartierTest.cartier.ZSettingTest"/>
+  <testcase name="testAboutUs on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="5.163" classname="cartier.cartierTest.cartier.ZSettingTest"/>
+  <testcase name="testChangeUserName on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="16.158" classname="cartier.cartierTest.cartier.ZSettingTest"/>
+  <testcase name="testCheckUpdate on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="6.823" classname="cartier.cartierTest.cartier.ZSettingTest"/>
+  <testcase name="testZSignOut on instance null(cartier.cartierTest.cartier.ZSettingTest)" time="3.453" classname="cartier.cartierTest.cartier.ZSettingTest"/>
+  <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="0.0" classname="cartier.cartierTest.cartier.FirstPageTest"/>
+  <testcase name="testChangeLocation on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="14.717" classname="cartier.cartierTest.cartier.FirstPageTest"/>
+  <testcase name="testGridViewShowing on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="1.043" classname="cartier.cartierTest.cartier.FirstPageTest"/>
+  <testcase name="testTabs on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="7.121" classname="cartier.cartierTest.cartier.FirstPageTest"/>
+  <testcase name="testUpButton on instance null(cartier.cartierTest.cartier.FirstPageTest)" time="53.91" classname="cartier.cartierTest.cartier.FirstPageTest"/>
+  <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.SellCarTest)" time="0.0" classname="cartier.cartierTest.cartier.SellCarTest"/>
+  <testcase name="deleteAllAds on instance null(cartier.cartierTest.cartier.SellCarTest)" time="17.313" classname="cartier.cartierTest.cartier.SellCarTest"/>
+  <testcase name="testEditMyAd on instance null(cartier.cartierTest.cartier.SellCarTest)" time="160.857" classname="cartier.cartierTest.cartier.SellCarTest"/>
+  <testcase name="testPublishCar on instance null(cartier.cartierTest.cartier.SellCarTest)" time="94.965" classname="cartier.cartierTest.cartier.SellCarTest"/>
+  <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="0.001" classname="cartier.cartierTest.cartier.ViewAdPageTest"/>
+  <testcase name="testCheckContact on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="23.024" classname="cartier.cartierTest.cartier.ViewAdPageTest"/>
+  <testcase name="testCollect on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="48.205" classname="cartier.cartierTest.cartier.ViewAdPageTest"/>
+  <testcase name="testShare on instance null(cartier.cartierTest.cartier.ViewAdPageTest)" time="33.009" classname="cartier.cartierTest.cartier.ViewAdPageTest"/>
+  <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.CarListPageTest)" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest"/>
+  <testcase name="testCarTypeFilter on instance null(cartier.cartierTest.cartier.CarListPageTest)" time="514.551" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Error communicating with the remote browser. It may have died.
+Build info: version: &amp;apos;2.43.1&amp;apos;, revision: &amp;apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&amp;apos;, time: &amp;apos;2014-09-10 09:43:55&amp;apos;
+System info: host: &amp;apos;cartierauto.local&amp;apos;, ip: &amp;apos;192.168.6.234&amp;apos;, os.name: &amp;apos;Mac OS X&amp;apos;, os.arch: &amp;apos;x86_64&amp;apos;, os.version: &amp;apos;10.10.1&amp;apos;, java.version: &amp;apos;1.8.0_31&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'cartierauto.local', ip: '192.168.6.234', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.8.0_31'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at cartier.cartierTest.pageObject.CarListPage.checkCarTypeFilter(CarListPage.java:48)
+	at cartier.cartierTest.cartier.CarListPageTest.testCarTypeFilter(CarListPageTest.java:52)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:140)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:117)
+	... 52 more
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testPriceFilter on instance null(cartier.cartierTest.cartier.CarListPageTest)" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testSearch on instance null(cartier.cartierTest.cartier.CarListPageTest)" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testMyTest on instance null(cartier.cartierTest.cartier.CollectionTest)" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest"/>
+  <testcase name="testAddCollectCount on instance null(cartier.cartierTest.cartier.CollectionTest)" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testAddCollectInfo on instance null(cartier.cartierTest.cartier.CollectionTest)" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testDeleteAllCollect on instance null(cartier.cartierTest.cartier.CollectionTest)" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testDeleteCollect on instance null(cartier.cartierTest.cartier.CollectionTest)" time="0.001" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testLastCollectShowsOnTop on instance null(cartier.cartierTest.cartier.CollectionTest)" time="0.0" classname="cartier.cartierTest.cartier.CollectionTest">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" time="0.001" classname="cartier.cartierTest.cartier.CarListPageTestTest">
+    <failure type="java.lang.RuntimeException" message="Test not implemented">
+      <![CDATA[java.lang.RuntimeException: Test not implemented
+	at cartier.cartierTest.cartier.CarListPageTestTest.setUp(CarListPageTestTest.java:9)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="tearDown" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTestTest">
+    <failure type="java.lang.RuntimeException" message="Test not implemented">
+      <![CDATA[java.lang.RuntimeException: Test not implemented
+	at cartier.cartierTest.cartier.CarListPageTestTest.tearDown(CarListPageTestTest.java:14)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testCarTypeFilter" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTestTest">
+    <failure type="java.lang.RuntimeException" message="Test not implemented">
+      <![CDATA[java.lang.RuntimeException: Test not implemented
+	at cartier.cartierTest.cartier.CarListPageTestTest.testCarTypeFilter(CarListPageTestTest.java:19)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testPriceFilter" time="0.001" classname="cartier.cartierTest.cartier.CarListPageTestTest">
+    <failure type="java.lang.RuntimeException" message="Test not implemented">
+      <![CDATA[java.lang.RuntimeException: Test not implemented
+	at cartier.cartierTest.cartier.CarListPageTestTest.testPriceFilter(CarListPageTestTest.java:24)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testSearch" time="0.0" classname="cartier.cartierTest.cartier.CarListPageTestTest">
+    <failure type="java.lang.RuntimeException" message="Test not implemented">
+      <![CDATA[java.lang.RuntimeException: Test not implemented
+	at cartier.cartierTest.cartier.CarListPageTestTest.testSearch(CarListPageTestTest.java:29)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testLoginWithWrongPassword" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testLoginWithWrongPhoneNumber" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="testzLogInSuccess" time="0.0" classname="cartier.cartierTest.cartier.LoginTest">
+    <skipped/>
+  </testcase>
 </testsuite>
