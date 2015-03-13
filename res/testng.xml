@@ -9,7 +9,7 @@
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-        <listener class-name="MyListener"></listener>
+        <listener class-name="cartier.cartierTest.MyListener"></listener>
     </listeners>
     <usedefaultlisteners name="false" />
 </suite>
