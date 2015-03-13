@@ -10,8 +10,8 @@ import java.net.URL;
 import junit.framework.TestCase;
 
 import org.junit.After;
-
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -58,5 +58,10 @@ public class MyTestCase extends TestCase {
         } finally {
         }
     }
+	@Test
+	public void testMyTest(){
+		
+	}
+	
 
 }

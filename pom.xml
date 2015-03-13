@@ -44,6 +44,24 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/libs/java-client-2.1.0.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>org.uncommons</groupId>
+            <artifactId>reportng</artifactId>
+            <version>1.1.4</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>3.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <packaging>jar</packaging>
     <name>java-client</name>
@@ -140,7 +158,20 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.17</version>
+                <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>res/${xmlFileName}</suiteXmlFile>
+                </suiteXmlFiles>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
+	<properties>
+		<xmlFileName></xmlFileName>
+	</properties>
 </project>
 
