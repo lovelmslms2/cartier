@@ -1,24 +1,27 @@
 package cartier.cartierTest.pageObject;
 
 import static org.junit.Assert.*;
+
 import java.util.List;
 
 import io.appium.java_client.AppiumDriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cartier.cartierTest.LogUtil;
 
 public class FirstPage {
 	private AppiumDriver driver;
-	private Common common;
+	private WebDriverWait wait;
 	private String location="上海";
 	String areaPath="//UIAApplication[1]/UIAWindow[2]/UIANavigationBar[1]/UIAButton[1]";
 	
-	public FirstPage(AppiumDriver driver,Common common){
+	public FirstPage(AppiumDriver driver,WebDriverWait wait){
 		this.driver=driver;
-		this.common=common;
+		this.wait=wait;
 	}
 
 	public void sleep(){
@@ -62,7 +65,7 @@ public class FirstPage {
 		city2List=driver.findElements(By.className("UIATableView")).get(1).findElements(By.className("UIATableCell"));
 		this.location=city2List.get(j).getAttribute("name"); 
 		city2List.get(j).click();		
-		common.checkInFirstPage();
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("百姓聚车商")));
 	}
 
     public int getGridCount() {
@@ -72,13 +75,14 @@ public class FirstPage {
 
 
     public boolean gotoGrid(int index) {
-		common.checkInFirstPage();
+    	wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("百姓聚车商")));
 		LogUtil.addStep("点击第" + index + "个格子");
 		List<WebElement> gridView=driver.findElements(By.className("UIACollectionCell"));
 		String s=gridView.get(index).getAttribute("name");
 		if(s!=null&&s!=""){
 			gridView.get(index).click();
-			sleep();
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(
+					By.name("In progress")));
 			return true;
 		}else{
 			return false;
@@ -87,7 +91,8 @@ public class FirstPage {
 
 	public void gotoGrid(String s) {
 		driver.findElement(By.name(s)).click();
-		sleep();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(
+				By.name("In progress")));
 	}
 
 }

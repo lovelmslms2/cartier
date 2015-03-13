@@ -26,7 +26,7 @@ public class CarListPageTest extends MyTestCase {
 	public void setUp() throws Exception {
 		super.setUp();
 	    common=new Common(driver,wait);
-	    firstPage=new FirstPage(driver,common);
+	    firstPage=new FirstPage(driver,wait);
 	    carListPage=new CarListPage(driver,wait);
 	    viewAdPage=new ViewAdPage(driver,wait);
 		common.checkInFirstPage();

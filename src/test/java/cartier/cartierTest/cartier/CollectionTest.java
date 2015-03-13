@@ -27,7 +27,7 @@ public class CollectionTest extends MyTestCase {
 	public void setUp() throws Exception {
 		super.setUp();
 	    common=new Common(driver,wait);
-	    firstPage=new FirstPage(driver,common);
+	    firstPage=new FirstPage(driver,wait);
 	    myInfoPage=new MyInfoPage(driver,wait);
 	    viewAdPage=new ViewAdPage(driver,wait);
 	    carListPage=new CarListPage(driver,wait);
@@ -152,6 +152,7 @@ public class CollectionTest extends MyTestCase {
         common.gotoMyInfoPage();
         myInfoPage.showCollection();
         assertTrue(title.contains(myInfoPage.getTitle(0)));
+        driver.findElement(By.name("首页")).click();
         deleteAllCollect();
     }
 }

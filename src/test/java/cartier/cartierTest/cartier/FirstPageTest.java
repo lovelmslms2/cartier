@@ -21,7 +21,7 @@ public class FirstPageTest extends MyTestCase{
 	public void setUp() throws Exception {
 		super.setUp();
 	    common=new Common(driver,wait);
-	    firstPage=new FirstPage(driver,common);
+	    firstPage=new FirstPage(driver,wait);
 		common.checkInFirstPage();
 	}
 
