@@ -62,6 +62,11 @@
             <version>3.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+        	<groupId>org.testng</groupId>
+        	<artifactId>testng</artifactId>
+        	<version>6.1.1</version>
+        </dependency>
     </dependencies>
     <packaging>jar</packaging>
     <name>java-client</name>
@@ -171,7 +176,7 @@
 		</plugins>
 	</build>
 	<properties>
-		<xmlFileName></xmlFileName>
+		<xmlFileName>testng.xml</xmlFileName>
 	</properties>
 </project>
 

@@ -1,10 +1,9 @@
 package cartier.cartierTest.cartier;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import cartier.cartierTest.MyTestCase;
 import cartier.cartierTest.model.Car;
@@ -13,14 +12,13 @@ import cartier.cartierTest.pageObject.MyInfoPage;
 import cartier.cartierTest.pageObject.SellCarPage;
 import cartier.cartierTest.pageObject.ViewAdPage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SellCarTest extends MyTestCase{
 	private ViewAdPage viewAdPage;
 	private MyInfoPage myInfoPage;
 	private SellCarPage sellCarPage;
 	private Common common;
 
-	@Before
+	@BeforeMethod
 	@Override
 	public void setUp() throws Exception {
 		super.setUp();
@@ -31,7 +29,7 @@ public class SellCarTest extends MyTestCase{
 	    common.checkInFirstPage();
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.quit();
 	}

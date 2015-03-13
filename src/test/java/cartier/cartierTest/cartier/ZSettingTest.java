@@ -1,21 +1,19 @@
 package cartier.cartierTest.cartier;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import cartier.cartierTest.MyTestCase;
 import cartier.cartierTest.pageObject.Common;
 import cartier.cartierTest.pageObject.MyInfoPage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ZSettingTest extends MyTestCase {
 	private MyInfoPage myInfoPage;
 	private Common common;
 	
-	@Before
+	@BeforeMethod
 	@Override
 	public void setUp() throws Exception {
 		super.setUp();
@@ -24,7 +22,7 @@ public class ZSettingTest extends MyTestCase {
 		common.checkInFirstPage();
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.quit();
 	}

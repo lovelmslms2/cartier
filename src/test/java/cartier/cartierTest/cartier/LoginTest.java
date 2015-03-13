@@ -7,27 +7,29 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-import junit.framework.TestCase;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
+//import junit.framework.TestCase;
+//import org.junit.After;
+//import org.junit.Before;
+//import org.junit.FixMethodOrder;
+//import org.junit.Test;
+//import org.junit.runners.MethodSorters;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import cartier.cartierTest.pageObject.Common;
 import cartier.cartierTest.pageObject.LoginPage;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class LoginTest extends TestCase{
+//@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class LoginTest {
 	private AppiumDriver driver;
 	private LoginPage loginPage;
 	private WebDriverWait wait;
 	private Common common;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		File appDir = new File("src/test/java/cartier/cartierTest");
 	    File app = new File(appDir, "cartierDev_new.app");
@@ -42,7 +44,7 @@ public class LoginTest extends TestCase{
 		common=new Common(driver,wait);
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.quit();
 	}
