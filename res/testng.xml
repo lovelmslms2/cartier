@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite
-    name="Suite"
-    verbose="1" >
-    <test name="Project_V3023" >
+<suite name="Suite" verbose="1" >
+    <test name="cartierTest_IOS" >
         <packages>
             <package name="cartier.cartierTest.cartier" />
         </packages>
@@ -11,6 +9,7 @@
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+        <listener class-name="MyListener"></listener>
     </listeners>
     <usedefaultlisteners name="false" />
 </suite>

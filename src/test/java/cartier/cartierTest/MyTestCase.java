@@ -9,11 +9,11 @@ import java.net.URL;
 
 import junit.framework.TestCase;
 
-import org.openqa.selenium.TimeoutException;
+import org.junit.After;
+
+import org.junit.Before;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 import cartier.cartierTest.pageObject.LoginPage;
 
@@ -21,7 +21,7 @@ public class MyTestCase extends TestCase {
 	protected  AppiumDriver driver;
 	protected  WebDriverWait wait;
 	
-	@BeforeMethod
+	@Before
 	public void setUp() throws Exception {
 		File appDir = new File("src/test/java/cartier/cartierTest");
 	    File app = new File(appDir, "cartierDev_new.app");
@@ -37,24 +37,11 @@ public class MyTestCase extends TestCase {
 		loginPage.singInWith("18817360115", "2300687");
 	}
 
-	@AfterMethod
+	@After
 	public void tearDown() throws Exception {
 		driver.quit();
 	}
 	
-	@Override
-    protected void runTest() throws Throwable {
-//        String testMethodName = getClass().getName() + "" + getName();
-        try {
-            LogUtil.clearLog();
-            super.runTest();
-        } catch (TimeoutException e){ 
-        	throw new TimeoutException("\n" + LogUtil.getLog().toString(), e);
-        } catch (Throwable e) {
-            // 测试用例失败的时候截图
-//            poseForScreenshotNamed(testMethodName);
-            throw new Exception("\n" + LogUtil.getLog().toString(), e);
-        } finally {
-        }
-    }	
+
+
 }

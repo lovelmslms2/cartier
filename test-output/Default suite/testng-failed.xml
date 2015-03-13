@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="cartier.cartierTest.cartier.LoginTest">
+      <class name="cartier.cartierTest.cartier.CarListPageTest">
         <methods>
-          <include name="testLoginWithWrongPhoneNumber"/>
-          <include name="testzLogInSuccess"/>
-          <include name="tearDown"/>
+          <include name="testSearch"/>
+          <include name="testPriceFilter"/>
+          <include name="testCarTypeFilter"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- cartier.cartierTest.cartier.LoginTest -->
+      </class> <!-- cartier.cartierTest.cartier.CarListPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
