@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="179398" started-at="2015-03-13T04:29:49Z" finished-at="2015-03-13T04:32:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="179398" started-at="2015-03-13T04:29:49Z" finished-at="2015-03-13T04:32:49Z">
+      <class name="cartier.cartierTest.cartier.ViewAdPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="setUp" is-config="true" duration-ms="25357" started-at="2015-03-13T12:29:49Z" finished-at="2015-03-13T12:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCheckContact()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="testCheckContact" duration-ms="22151" started-at="2015-03-13T12:30:15Z" finished-at="2015-03-13T12:30:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="tearDown" is-config="true" duration-ms="2547" started-at="2015-03-13T12:30:37Z" finished-at="2015-03-13T12:30:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="setUp" is-config="true" duration-ms="19533" started-at="2015-03-13T12:30:39Z" finished-at="2015-03-13T12:30:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCollect()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="testCollect" duration-ms="49451" started-at="2015-03-13T12:30:59Z" finished-at="2015-03-13T12:31:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCollect -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="tearDown" is-config="true" duration-ms="2729" started-at="2015-03-13T12:31:48Z" finished-at="2015-03-13T12:31:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="setUp" is-config="true" duration-ms="19037" started-at="2015-03-13T12:31:51Z" finished-at="2015-03-13T12:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testShare()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="testShare" duration-ms="33398" started-at="2015-03-13T12:32:10Z" finished-at="2015-03-13T12:32:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShare -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(cartier.cartierTest.cartier.ViewAdPageTest)]" name="tearDown" is-config="true" duration-ms="5184" started-at="2015-03-13T12:32:44Z" finished-at="2015-03-13T12:32:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cartier.cartierTest.cartier.ViewAdPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
