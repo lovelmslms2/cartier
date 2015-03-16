@@ -7,21 +7,18 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import java.io.File;
 import java.net.URL;
 
-import junit.framework.TestCase;
-
-import org.junit.After;
-
-import org.junit.Before;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import cartier.cartierTest.pageObject.LoginPage;
 
-public class MyTestCase extends TestCase {
+public class MyTestCase {
 	protected  AppiumDriver driver;
 	protected  WebDriverWait wait;
 	
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		File appDir = new File("src/test/java/cartier/cartierTest");
 	    File app = new File(appDir, "cartierDev_new.app");
@@ -37,7 +34,7 @@ public class MyTestCase extends TestCase {
 		loginPage.singInWith("18817360115", "2300687");
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.quit();
 	}

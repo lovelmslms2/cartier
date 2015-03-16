@@ -7,9 +7,9 @@
         </packages>
     </test>
     <listeners>
+        <listener class-name="cartier.cartierTest.MyListener" />
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-        <listener class-name="cartier.cartierTest.MyListener"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />    
     </listeners>
     <usedefaultlisteners name="false" />
 </suite>

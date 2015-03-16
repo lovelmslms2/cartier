@@ -52,6 +52,7 @@ public class FirstPage {
     	List<WebElement> cityList;
     	
     	driver.findElement(By.xpath(areaPath)).click();
+    	sleep();
     	cityList=driver.findElements(By.className("UIATableCell"));
     	this.location=cityList.get(index).getAttribute("name");  
     	cityList.get(index).click();
