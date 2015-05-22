@@ -24,7 +24,7 @@ public class MyTestCase {
 	    File app = new File(appDir, "cartierDev_new.app");
 	    DesiredCapabilities capabilities = new DesiredCapabilities();
 	    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "");
-	    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
+	    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.3");
 	    capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone Simulator");
 	    capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 	    driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
